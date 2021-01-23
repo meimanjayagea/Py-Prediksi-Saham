@@ -3,7 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import datetime
-import uasMiel
+import appS
 
 
 app = dash.Dash()
@@ -24,7 +24,7 @@ def update_graph(input_data):
     end = datetime.datetime.now()
 
     try:
-        (df,_,_,_,_) =uasMiel.predict(input_data,start,end)
+        (df,_,_,_,_) =appS.predict(input_data,start,end)
     except:
         return ""
 
