@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 #mempredict nilai terdekat 
 from sklearn.neighbors import KNeighborsRegressor
-# from sklearn.linear_model import Ridge
+from sklearn.linear_model import Ridge
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
